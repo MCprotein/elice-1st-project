@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>쇼핑-21팀</title>
+    <!-- 아이콘 -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/elice-rabbit-favicon.png"
+    />
+    <!-- bulma css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <!-- 폰트 어썸: 아이콘 -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/7630448495.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 커스텀 css, js -->
+    <link rel="stylesheet" href="home.css" />
+    <script src="home.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+      style="margin: 0 auto"
+    >
+      <div id="navbarBasicExample" class="navbar-menu category-menu">
+        <ul class="navbar-start categories"></ul>
+      </div>
+    </nav>
+    <div class="slide-wrappper">
+      <div class="slide-container">
+        <div class="slide-list"></div>
+        <div class="button-container">
+          <a href="javascript:void(0)" class="prev"
+            ><i class="fas fa-chevron-left"></i
+          ></a>
+          <a href="javascript:void(0)" class="play"
+            ><i class="fas fa-play"></i
+          ></a>
+          <a href="javascript:void(0)" class="pause"
+            ><i class="fas fa-stop"></i
+          ></a>
+          <a href="javascript:void(0)" class="next"
+            ><i class="fas fa-chevron-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <div id="subtitle"><h1>오늘의 추천 상품</h1></div>
+      <div
+        class="container product-item-container"
+        id="productItemContainer"
+      ></div>
+    </section>
+  </body>
+</html>
